@@ -194,7 +194,7 @@ with st.form("booking_form"):
         dur = st.selectbox("Duration", ["1 Hour", "2 Hours"])
 
     st.warning("⚠️ Ensure you have a Credit Card saved on your account, or the 'Pay' step may fail.")
-    submitted = st.form_submit_button("🤖 Run Bot Now")
+    submitted = st.form_submit_button("Hit Ace")
 
 if submitted:
     if not user or not pw:
