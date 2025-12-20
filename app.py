@@ -172,8 +172,8 @@ def run_booking_bot(username, password, event_name, target_date, time_str, durat
         driver.quit()
 
 # --- STREAMLIT FRONT END ---
-st.set_page_config(page_title="Tennis Bot", page_icon="🎾")
-st.title("🎾 Tennis Court Auto-Booker")
+st.set_page_config(page_title="serveBot", page_icon="🎾")
+st.title("serveBot 3.0")
 
 with st.form("booking_form"):
     c1, c2 = st.columns(2)
