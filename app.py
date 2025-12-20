@@ -38,9 +38,9 @@ if st.button("Book Now"):
             time.sleep(2)  # Wait for page load
 
             # Enter username and password (adjust selectors if needed - see inspection guide below)
-            driver.find_element(By.ID, "mailAddress").send_keys(username)  # Common ID for email
-            driver.find_element(By.ID, "password").send_keys(password)  # Common ID for password
-            driver.find_element(By.ID, "button_login").click()  # Common ID for login button
+            driver.find_element(By.CSS_SELECTOR, 'input[aria-label="Email address Required"]').send_keys(username)
+            driver.find_element(By.CSS_SELECTOR, 'input[aria-label="Password Required"]').send_keys(password)
+            driver.find_element(By.CSS_SELECTOR, 'button.btn.btn-super').click()
             time.sleep(5)  # Wait for login to complete
 
             # Step 2: Go to reservation page
